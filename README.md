@@ -69,6 +69,10 @@ python test.py --cfg configs/dynamic/VARD.yaml --visualize --snapshot 8000 --gpu
 ```
 The command above will take the model snapshot at 8000th iteration and run inference using GPU ID 1, saving visualizations as well.
 
+## VARD-Transformer
+Please note that the main contribution of this paper lies in the difference representation modeling (by VARD), which is generic for both decoders of LSTM and Transformer. If you want to implement VARD-Transformer, please just replace the LSTM with transformer. More details of transformer decoder, please refer to our another repository [NCT](https://github.com/tuyunbin/NCT).
+
+
 ## Evaluation
 * Caption evaluation
 
@@ -88,6 +92,7 @@ Once the best model is found on the validation set, you can run inference on tes
 python evaluate.py --results_dir ./experiments/VARD_LSTM/test_output/captions --anno ./data/total_change_captions_reformat.json --type_file ./data/type_mapping.json
 ```
 The results are saved in `./experiments/VARD_LSTM/test_output/captions/eval_results.txt`
+
 
 If you find this helps your research, please consider citing:
 ```
