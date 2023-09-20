@@ -1,11 +1,16 @@
-# Viewpoint-Adaptive Representation Disentanglement 
-# for Change Captioning
+# Viewpoint-Adaptive Representation Disentanglement for Change Captioning
+
+This package contains the accompanying code for the following paper:
+
+Tu, Yunbin, et al. ["Viewpoint-Adaptive Representation Disentanglement for Change Captioning."](https://ieeexplore.ieee.org/document/10108947), which has appeared as a regular paper in IEEE TIP 2023. 
 
 ## Installation
-
-1. Make virtual environment with Python 3.5 (`mkvirtualenv rcc -p python3.5`)
+1. Clone this repository
+2. cd VARD
+1. Make virtual environment with Python 3.5 
 2. Install requirements (`pip install -r requirements.txt`)
-3. Setup COCO caption eval tools ([github](https://github.com/tylin/coco-caption)) (Since the repo only supports Python 2.7, either create a separate virtual environment with Python 2.7 or modify the code to be compatible with Python 3.5).
+3. Setup COCO caption eval tools ([github](https://github.com/mtanti/coco-caption)) 
+4. A TITAN Xp GPU or others.
 
 ## Data
 1. Download data from here: [google drive link](https://drive.google.com/file/d/1HJ3gWjaUJykEckyb2M0MB4HnrJSihjVe/view?usp=sharing)
@@ -55,7 +60,6 @@ ln -s $PATH_TO_DIR$ experiments
 python -m visdom.server
 
 # start training for VARD-LSTM
-```
 python train.py --cfg configs/dynamic/VARD.yaml  --entropy_weight 0.0001
 ```
 ## Testing/Inference
@@ -84,4 +88,20 @@ Once the best model is found on the validation set, you can run inference on tes
 python evaluate.py --results_dir ./experiments/VARD_LSTM/test_output/captions --anno ./data/total_change_captions_reformat.json --type_file ./data/type_mapping.json
 ```
 The results are saved in `./experiments/VARD_LSTM/test_output/captions/eval_results.txt`
+
+If you find this helps your research, please consider citing:
+```
+@ARTICLE{tu2023viewpoint,
+  author={Tu, Yunbin and Li, Liang and Su, Li and Du, Junping and Lu, Ke and Huang, Qingming},
+  journal={IEEE Transactions on Image Processing}, 
+  title={Viewpoint-Adaptive Representation Disentanglement Network for Change Captioning}, 
+  year={2023},
+  volume={32},
+  pages={2620-2635},
+  doi={10.1109/TIP.2023.3268004}}
+```
+
+## Contact
+My email is tuyunbin1995@foxmail.com.
+
 
