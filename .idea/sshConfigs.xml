@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="10.29.150.72" id="00fdbcbc-fd18-496b-9a7e-e41d3814ca0f" keyPath="D:\服务器登录\ict\id_rsa" port="22" nameFormat="DESCRIPTIVE" username="yunbin_tu" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

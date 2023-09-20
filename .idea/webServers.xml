@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4b72f5ad-8dec-42e1-b783-ec3b0cf20570" name="65">
+        <fileTransfer rootFolder="/home/zc" accessType="SFTP" host="10.103.14.65" port="22" sshConfigId="7de10293-3d51-4b9e-830c-847da6dcfa35" sshConfig="zc@10.103.14.65:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="fb26b5fc-da18-4a1d-9f5f-0f8001184623" name="60">
+        <fileTransfer rootFolder="/data/zc/aaai" accessType="SFTP" sshConfigId="300febad-2048-4ee1-8736-98c99af9a264" sshConfig="zhouchang2@10.103.14.60:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="03f27c25-ce97-4be7-9ba7-4eb7363b29b4" name="titan">
+        <fileTransfer rootFolder="/home/yunbin_tu" accessType="SFTP" host="10.29.150.72" port="22" sshConfigId="00fdbcbc-fd18-496b-9a7e-e41d3814ca0f" sshConfig="yunbin_tu@10.29.150.72:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
